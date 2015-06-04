@@ -7,7 +7,17 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="/helloworld.html" method="post">
+<form action="/test/helloworld.do" method="post">
+
+    请输入姓名：<input type="text" name="userName"/>
+
+    <input type="submit" value="提交"/>
+
+    <br/>
+
+</form>
+
+<form action="/test/helloname.do" method="post">
 
     请输入姓名：<input type="text" name="userName"/>
 
