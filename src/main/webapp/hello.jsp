@@ -33,7 +33,7 @@
         <td align="left">协议类型:
             <select id="agreementType">
                 <option value="ZTBB0G00,0000">投资</option>
-                <option value="ZTBB0G01,0000">还款</option>
+                <option value="ZHKB0H01,0000">还款</option>
             </select>
         </td>
     </tr>
