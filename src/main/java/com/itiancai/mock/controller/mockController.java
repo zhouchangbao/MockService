@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.logging.Logger;
 
@@ -20,9 +21,18 @@ import javax.servlet.http.HttpServletRequest;
 public class mockController {
 
   Logger logger=Logger.getLogger(this.getClass().getName());
-  @ResponseBody
+//  @ResponseBody
   @RequestMapping(value = "payservice",produces = "text/html")
-  public String mockService(@RequestParam("service") String service, HttpServletRequest request) {
+  public ModelAndView mockService(@RequestParam("service") String service, HttpServletRequest request) {
+    ModelAndView view = new ModelAndView("/spay/pay/register.do?");
+    return view;
+
+  }
+  //实名认证以及投资
+  @ResponseBody
+  @RequestMapping(value = "register",produces = "text/html")
+  public String test(HttpServletRequest request){
+    String service=request.getParameter("service");
     String str = "";
     //实名认证mock
     if ("mer_register_person".equals(service)) {
@@ -52,6 +62,5 @@ public class mockController {
     logger.info(service);
     logger.info(str);
     return str;
-
   }
 }
