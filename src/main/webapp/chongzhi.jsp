@@ -12,7 +12,7 @@
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script>
         $(function () {
-            $("#yuchongzhi").submit(function(data){
+            $("#yuchongzhi").submit(function (data) {
                 alert(data);
             });
         });
@@ -59,19 +59,25 @@
                                          value="100000"/></td>
         </tr>
         <tr align="center">
-            <td align="left">userID：<input type="text" id="userID"
-                                           value="C3735668-8FCB-4171-8ADB-A9248AAB8695"/></td>
-        </tr>
-        <tr align="center">
-            <td align="left">服务地址:<input type="text" id="httpAddr" value="http://localhost:4000"/>
+            <td align="left">userID：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="userID"
+                                                                   style="width:300px;"
+                                                                   value="C3735668-8FCB-4171-8ADB-A9248AAB8695"/>
             </td>
         </tr>
         <tr align="center">
-            <td align="left">订单号:<input type="text" id="order_id"/></td>
+            <td align="left">服务地址:&nbsp;&nbsp;&nbsp;<input type="text" id="httpAddr"
+                                                           value="http://localhost:4000"/>
+            </td>
         </tr>
         <tr align="center">
-            <td align="center"><input type="button" onclick="yuchongzhi()" value="预充值"/></td>
-            <td align="center"><input type="button" onclick="chongzhi()" value="充值"/></td>
+            <td align="left">订单号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                                                                                  id="order_id"/>
+            </td>
+        </tr>
+        <tr align="center">
+            <td align="center" colspan="2"><input type="button" onclick="yuchongzhi()" value="预充值"/>
+                <input type="button" onclick="chongzhi()" value="充值"/></td>
+
         </tr>
     </table>
 </form>
