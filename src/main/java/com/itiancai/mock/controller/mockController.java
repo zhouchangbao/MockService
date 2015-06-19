@@ -56,6 +56,17 @@ public class mockController {
             + "  </body>\n"
             + "</html>";
     }
+    //创建标的账户
+    if ("mer_bind_project".equals(service)) {
+      str = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n"
+            + "<html>\n"
+            + "  <head>\n"
+            + "\t<META NAME=\"MobilePayPlatform\" CONTENT=\"mer_check_date=20150619&mer_id=7099079&project_account_id="+RandomStringUtils.randomNumeric(15)+"&project_state=92&ret_code=0000&ret_msg=操作成功&sign_type=RSA&version=1.0&sign=wwyaS1i29jWdSUaXNxxgKNGpM813E7ijdzaC/oNngcDwE8mWLvmCGzCy83YGTnFOJGMAa+/DoefpnUbGgjfnqEhWfmzaBrMfrTIj2AVW8a5m2BSaC93UDZx+7uvoSvydqqQL2jRgVRd+BRfcEZXJkWabfnk+EixIcvC5zU7R5Gw=\">\n"
+            + "  </head>\n"
+            + "  <body>\n"
+            + "  </body>\n"
+            + "</html>";
+    }
     //开通协议
     //开通投资协议http://localhost:8080/api/v2/upayment/bindAgreementReturn?ret_code=0000&user_id=UB201501221442450000000002741552&user_bind_agreement_list=ZTBB0G00,0000
     //开通划款协议http://localhost:8080/api/v2/upayment/bindAgreementReturn?ret_code=0000&user_id=UB201501221442450000000002741552&user_bind_agreement_list=ZHKB0H01,0000
