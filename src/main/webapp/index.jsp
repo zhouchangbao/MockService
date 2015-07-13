@@ -24,7 +24,9 @@
     <input type="submit" value="提交"/>
 
     <br/>
-
+    <a href="notify.jsp">通知页面</a>
+    <br/>
+    //TODO 支持修改平台账户余额，用户余额等。
 </form>
 </body>
 </html>
