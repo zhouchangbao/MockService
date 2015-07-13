@@ -158,7 +158,7 @@
         ZCZP0800("无密快捷协议"),
         ZTBB0G00("无密投资协议"),
         ZHKB0H01("无密还款协议"),
-        ZKJP0700("借记卡快捷协议");多个以“|”分割，例：ZTBB0G00|ZHKB0H01<br/>
+        ZKJP0700("借记卡快捷协议");多个以“|”分割，例：ZTBB0G00,0000|ZHKB0H01,0000<br/>
         <HR style="border:1 dashed #987cb9" width="100%" color=#987cb9 SIZE=1>
         取现金额-平台提现通知填写(必须调用后台通知)
         <HR style="border:1 dashed #987cb9" width="100%" color=#987cb9 SIZE=1>
