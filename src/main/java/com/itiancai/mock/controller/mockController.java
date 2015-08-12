@@ -160,8 +160,10 @@ public class mockController {
     return sb.toString();
   }
 
+  @ResponseBody
   @RequestMapping("tenderBalanceQuery")
-  public void tenderBalanceQuery(@RequestParam("id") String id, @RequestParam("value") String value) {
+  public String tenderBalanceQuery(@RequestParam("id") String id, @RequestParam("value") String value) {
     Cache.map.put(id,value);
+    return "true";
   }
 }
