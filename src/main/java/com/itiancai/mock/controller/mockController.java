@@ -2,6 +2,8 @@ package com.itiancai.mock.controller;
 
 import com.google.gson.Gson;
 
+import com.itiancai.mock.cache.Cache;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -126,6 +128,17 @@ public class mockController {
             + "  </body>\n"
             + "</html>";
     }
+    if("project_account_search".equals(service)) {
+      str = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n"
+            + "<html>\n"
+            + "  <head>\n"
+            + "\t<META NAME=\"MobilePayPlatform\" CONTENT=\"ret_code=0000&ret_msg=交易成功&balance="+ Cache.map.get(request.getParameter(
+          "project_id"))+ "\">\n"
+            + "  </head>\n"
+            + "  <body>\n"
+            + "  </body>\n"
+            + "</html>";
+    }
     //开通协议
     //开通投资协议http://localhost:8080/api/v2/upayment/bindAgreementReturn?ret_code=0000&user_id=UB201501221442450000000002741552&user_bind_agreement_list=ZTBB0G00,0000
     //开通划款协议http://localhost:8080/api/v2/upayment/bindAgreementReturn?ret_code=0000&user_id=UB201501221442450000000002741552&user_bind_agreement_list=ZHKB0H01,0000
@@ -145,5 +158,12 @@ public class mockController {
       sb.append(strs[r]);
     }
     return sb.toString();
+  }
+
+  @ResponseBody
+  @RequestMapping("tenderBalanceQuery")
+  public String tenderBalanceQuery(@RequestParam("id") String id, @RequestParam("value") String value) {
+    Cache.map.put(id,value);
+    return "true";
   }
 }
