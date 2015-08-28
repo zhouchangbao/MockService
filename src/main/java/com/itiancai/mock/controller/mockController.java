@@ -120,7 +120,7 @@ public class mockController {
       str = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n"
             + "<html>\n"
             + "  <head>\n"
-            + "\t<META NAME=\"MobilePayPlatform\" CONTENT=\"ret_code=0000&ret_msg=交易成功&gate_id=CMB" + "\">\n"
+            + "\t<META NAME=\"MobilePayPlatform\" CONTENT=\"ret_code=0000&plat_user_id=UB201505111533550000000003941135&account_id=02000156732579&cust_name=测试固定&identity_code=430**************3&account_state=1&balance=1815&card_id=621483******2469&ret_msg=交易成功&gate_id=CMB" + "\">\n"
             + "  </head>\n"
             + "  <body>\n"
             + "  </body>\n"
